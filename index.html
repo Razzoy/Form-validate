@@ -1,26 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validerings Opgave</title>
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/page.js"></script>
+    <script src="assets/js/page.js" defer></script>
 </head>
+
 <body>
     <section id="tilmeld">
-        <form>
+        <form id="form">
+            <header>
+                <h2>Tilmelding</h2>
+                <p>Udfyld formen</p>
+            </header>
             <fieldset>
-                <input id="name" type="text" placeholder="Navn">
-            <input id="surName" type="text" placeholder="Efternavn">
+                <div id="nameBox" class="inputBoxes">
+                    <input id="name" class="inputField" type="text" placeholder="Navn">
+                </div>
+                <div id="SurNameBox" class="inputBoxes">
+                    <input id="surName" class="inputField" type="text" placeholder="Efternavn">
+                </div>
+                <div id="addressBox" class="inputBoxes">
+                    <input id="address" class="inputField" type="text" placeholder="Adresse">
+                </div>
+                <div id="zipCodeBox" class="inputBoxes">
+                    <input id="zipCode" class="inputField" type="text" placeholder="Post Nummer">
+                </div>
             </fieldset>
-            <fieldset>
-                <input id="address" type="text" placeholder="Adresse">
-            <input id="zipCode" type="text" placeholder="Post Nummer">
-            </fieldset>
-            <input id="email" type="text" placeholder="Email">
+            <div id="emailBox" class="inputBoxes">
+            <input id="email" class="inputField" type="text" placeholder="Email">
+            </div>
             <button id="submitButton">Tilmeld dig her</button>
         </form>
     </section>
 </body>
+
 </html>
