@@ -36,7 +36,7 @@ form{
     border-radius: 10px;
     position: relative;
     margin: auto;
-    margin-top: 20%;
+    margin-top: 200px;
 }
 
 form fieldset{
@@ -53,6 +53,8 @@ form button{
     padding: 1vw;
     width: 30%;
     align-self: center;
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 .inputField{

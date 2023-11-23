@@ -8,7 +8,6 @@ const myEmail = document.getElementById('email');
 const myButton = document.getElementById('submitButton');
 
 const nameBox = document.getElementById('nameBox');
-console.log(nameBox);
 const surNameBox = document.getElementById('surNameBox');
 const addressBox = document.getElementById('addressBox');
 const zipCodeBox = document.getElementById('zipCodeBox');
@@ -43,7 +42,6 @@ myButton.addEventListener('click', (event)=> {
             console.log('Navnet er ikke udfyldt korrekt..');
             myName.classList.toggle('errorMarking');
 
-            console.log(nameBox);
             errorResponse(nameBox, 'Dit navn skal mindst have 2 tegn');
         }
 
@@ -79,7 +77,7 @@ myButton.addEventListener('click', (event)=> {
 
 function validateZipCode(code) {
 
-    let zipCodeRegex = /^(?:[1-24-9]\d{3}|3[0-8]\d{2})$/;
+    const zipCodeRegex = /^(?:[1-24-9]\d{3}|3[0-8]\d{2})$/;
     let isValid = zipCodeRegex.test(code);
 
     return isValid;
@@ -88,7 +86,7 @@ function validateZipCode(code) {
 
 function validateEmail(email){
 
-    let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let isValid = emailRegex.test(email);
 
     return isValid;
