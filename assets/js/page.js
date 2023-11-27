@@ -31,7 +31,7 @@ myButton.addEventListener('click', (event)=> {
         formParent.innerHTML = '';
 
         let myResponseElement = document.createElement('h2');
-        myResponseElement.innerText = 'Tak for Tilmeldingen!'
+        myResponseElement.innerText = 'Tak for Tilmeldingen!';
         formParent.appendChild(myResponseElement);
 
     }else{
