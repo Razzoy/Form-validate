@@ -1,19 +1,21 @@
 const formParent = document.getElementById('tilmeld');
+
 const myName = document.getElementById('name');
-const mySurName = document.getElementById('surName');
-const myAddress = document.getElementById('address');
-const myZipCode = document.getElementById('zipCode');
-const myEmail = document.getElementById('email');
-
-const myButton = document.getElementById('submitButton');
-
 const nameBox = document.getElementById('nameBox');
+
+const mySurName = document.getElementById('surName');
 const surNameBox = document.getElementById('surNameBox');
+
+const myAddress = document.getElementById('address');
 const addressBox = document.getElementById('addressBox');
+
+const myZipCode = document.getElementById('zipCode');
 const zipCodeBox = document.getElementById('zipCodeBox');
+
+const myEmail = document.getElementById('email');
 const emailBox = document.getElementById('emailBox');
 
-
+const myButton = document.getElementById('submitButton');
 
 
 myButton.addEventListener('click', (event)=> {
